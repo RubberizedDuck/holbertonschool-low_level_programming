@@ -6,9 +6,9 @@
 */
 int main(void)
 {
-char alph;
-while (alph <= 'z')
-putchar(alph);
-alph++;
+char x;
+while (x <= 'z')
+putchar(x);
+x++;
 return (0);
 }
