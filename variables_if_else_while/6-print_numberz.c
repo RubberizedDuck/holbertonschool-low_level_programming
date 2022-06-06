@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	int x;
+	int x = 0;
 
 	while (x < "10")
 	{
