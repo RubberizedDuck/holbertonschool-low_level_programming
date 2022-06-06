@@ -2,9 +2,10 @@
 
 /**
  *main - Prints out a statement with puts.
- *Return: return not used
+ *Return: return the status.
 */
-char main(void)
+int main(void)
 {
   puts("Programming is like building a multilingual puzzle");
+  return (0);
 }
