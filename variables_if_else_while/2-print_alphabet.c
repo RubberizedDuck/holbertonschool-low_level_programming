@@ -9,6 +9,6 @@ int main(void)
 char alph;
 while (alph <= 'z')
 putchar(alph);
-x++;
+alph++;
 return (0);
 }
