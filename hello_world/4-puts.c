@@ -1,3 +1,10 @@
 #include <stdio.h>
-int puts("Programming is like building a multilingual puzzle\n");
-return (0);
+
+/**
+ *main - Prints out a statement with puts.
+ *Return: return not used
+*/
+char main(void)
+{
+puts("Programming is like building a multilingual puzzle")
+}
