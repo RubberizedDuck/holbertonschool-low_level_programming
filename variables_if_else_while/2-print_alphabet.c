@@ -8,7 +8,7 @@ int main(void)
 {
 char alph;
 while (alph <= 'z')
-putchar(x);
+putchar(alph);
 x++;
 return (0);
 }
