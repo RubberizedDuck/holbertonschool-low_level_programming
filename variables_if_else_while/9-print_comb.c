@@ -9,7 +9,6 @@
 int main(void)
 {
 	int a = '0';
-	char b = ", "
 
 	while (a <= '9')
 	{
@@ -17,7 +16,8 @@ int main(void)
 		a = (a + 1);
 		if (a <= '9')
 		{
-			putchar(b);
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
