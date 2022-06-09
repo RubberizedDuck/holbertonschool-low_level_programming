@@ -5,10 +5,10 @@
  * Return: 0 if works
  */
 
-void main(int)
+int main(void)
 {
-	if (i > 0)
-	{
-		printf("%d is positive\n");
-	}
+	int a = 0;
+
+	positive_or_negative(a);
+	return (0);
 }
