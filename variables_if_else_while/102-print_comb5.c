@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * jack_bauer - Prints every minute of the day
+ * main - prints every combination of two, two digit numbers
+ * Return: Always returns 0
  */
 
 int main(void)
