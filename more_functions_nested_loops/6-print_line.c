@@ -2,7 +2,7 @@
 
 /**
  * print_line - prints the '_' by number inserted.
- *
+ *@n: is the integer being checked.
  * Return: void
  */
 
