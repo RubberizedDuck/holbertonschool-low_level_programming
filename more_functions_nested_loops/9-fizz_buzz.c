@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 /**
- *
- *
- *
+ * main - Prints out 'Fizz' if "a" divided by 3 equals 0
+ * prints 'Buzz' if "a" divided by 5 equals 0
+ * and prints 'FizzBuzz' if "a" divided by 3 and 5 equals 0.
+ * Return: always 0
  */
 
 int main(void)
@@ -31,5 +32,6 @@ int main(void)
 		}
 		a = a + 1;
 	}
-	return(0);
+	printf("\n");
+	return (0);
 }
