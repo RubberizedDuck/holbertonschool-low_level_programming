@@ -30,11 +30,11 @@ int main(void)
 		{
 			printf("%d", a);
 		}
-		a = a + 1;
 		if (a < 100)
 		{
 			printf(" ");
 		}
+		a = a + 1;
 	}
 	printf("\n");
 	return (0);
