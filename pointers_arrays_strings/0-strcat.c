@@ -18,8 +18,10 @@ char *_strcat(char *dest, char *src)
 	{
 		des = des + 1;
 	}
-	/* Appends the source string characters until not equal to
-	   null character of src */
+	/*
+	 * Appends the source string characters until not equal to
+	 * null character of src
+	 */
 	str = 0;
 	while (src[str] != '\0')
 	{
