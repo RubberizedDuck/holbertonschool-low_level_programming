@@ -21,6 +21,7 @@ int _strlen(char *s)
  * @dest: the string being appended
  * @src: the string being copied
  * @n: the amount of src to copy
+ * Return: string after concatenation
  */
 
 char *_strncat(char *dest, char *src, int n)
