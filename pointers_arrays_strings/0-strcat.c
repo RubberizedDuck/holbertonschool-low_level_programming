@@ -14,7 +14,7 @@ char *_strcat(char *dest, char *src)
 
 	/* Finds the length of string */
 	des = 0;
-	while(dest[des] != '\0')
+	while (dest[des] != '\0')
 	{
 		des = des + 1;
 	}
