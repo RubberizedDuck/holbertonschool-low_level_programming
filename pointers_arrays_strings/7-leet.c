@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * swap_string - swaps specific chars with specific numbers
+ * rearrange - swaps specific chars with specific numbers
  * @s: the character to be checked
  */
 
-void swap_string(char *s)
+void rearrange(char *s)
 {
 	int oldstr[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 	int newstr[] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
@@ -21,7 +21,7 @@ void swap_string(char *s)
 	}
 }
 /**
- * leet - uses switch_string to replace certain char with numbers
+ * leet - uses rearrange function to replace certain char with numbers
  * @str: string being passed into function
  * Return: string after function
  */
@@ -32,7 +32,7 @@ char *leet(char *str)
 
 	while (str[i] != '\0')
 	{
-		swap_string(&str[i]);
+		rearrange(&str[i]);
 		i = i + 1;
 	}
 	return (str);
