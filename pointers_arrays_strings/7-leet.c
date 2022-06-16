@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * switch_string - swaps specific chars with specific numbers
+ * swap_string - swaps specific chars with specific numbers
  * @s: the character to be checked
  */
 
-void switch_string(char *s)
+void swap_string(char *s)
 {
 	int oldstr[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 	int newstr[] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
@@ -32,7 +32,7 @@ char *leet(char *str)
 
 	while (str[i] != '\0')
 	{
-		switch_string(&str[i]);
+		swap_string(&str[i]);
 		i = i + 1;
 	}
 	return (str);
