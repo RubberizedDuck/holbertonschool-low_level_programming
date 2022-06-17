@@ -45,5 +45,5 @@ char *_strpbrk(char *s, char *accept)
 		aCount = 0;
 		sCount = sCount + 1;
 	}
-	return (s);
+	return (0);
 }
