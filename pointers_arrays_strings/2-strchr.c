@@ -9,19 +9,15 @@
 
 char *_strchr(char *s, char c)
 {
-	int i = 0;
-
-	/* loops while pointer doesn't equall NULL termoinator */
-	while (s[i] != '\0')
+	/* loops while pointer doesn't equal string */
+	while (*s != c)
 	{
-		/* returns remainder of c if true */
-		if (c == s[i])
+		/* returns nothing if pointer equals null */
+		if (*s == '\0')
 		{
-			return (&s[i]);
+			return (0);
 		}
-		else
-			return ('\0');
-		i = i + 1;
+		s = s + 1;
 	}
 	/* returns what's stored in pointer */
 	return (s);
