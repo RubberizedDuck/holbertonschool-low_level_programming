@@ -21,7 +21,7 @@ int _strlen(char *s)
  * _strspn - counts the length of substring
  * @s: the string to search
  * @accept: the characters to count
- * @Return: number of letters counted
+ * Return: number of letters counted
  */
 
 unsigned int _strspn(char *s, char *accept)
