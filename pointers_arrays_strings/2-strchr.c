@@ -19,6 +19,10 @@ char *_strchr(char *s, char c)
 		{
 			return (&s[i]);
 		}
+		if (c == '\0')
+		{
+			return ('\0');
+		}
 		i = i + 1;
 	}
 	/* returns what's stored in pointer */
