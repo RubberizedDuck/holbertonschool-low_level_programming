@@ -18,15 +18,7 @@ int _strlen(char *s)
 	return (len);
 }
 /**
- * _strncat - add src to the end of dest until n
- * @dest: the string being appended
- * @src: the string being copied
- * @n: the amount of src to copy
- * Return: string after concatenation
- */
-
-/**
- * sting_nconcat - concats s2 onto s1 by the nth number
+ * string_nconcat - concats s2 onto s1 by the nth number
  * @s1: destination string
  * @s2: string to copy
  * @n: number of characters to copy
@@ -43,17 +35,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		len1 = 0;
 	}
 	else
-	{
 		len1 = _strlen(s1);
-	}
 	if (s2 == NULL)
 	{
 		len2 = 0;
 	}
 	else
-	{
 		len2 = _strlen(s2);
-	}
 	if (len2 > n)
 	{
 		len2 = n;
