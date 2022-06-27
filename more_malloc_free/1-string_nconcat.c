@@ -20,8 +20,8 @@ int _strlen(char *s)
 /**
  * string_nconcat - concats s2 onto s1 by the nth number
  * @s1: destination string
- * @s2: string to copy
- * @n: number of characters to copy
+ * @s2: string to concat
+ * @n: number of bytes to concat
  * Return: value stored in malloc pointer
  */
 
@@ -47,7 +47,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		len2 = n;
 	}
 	totalLen = len1 + len2;
-	concat = malloc(totalLen * sizeof(*concat) + 1);
+	concat = malloc(totalLen * sizeof(*concat) + 1 + n);
 	if (concat == NULL)
 	{
 		return (NULL);
