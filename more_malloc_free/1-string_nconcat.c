@@ -31,17 +31,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *concat;
 
 	if (s1 == NULL)
-	{
-		len1 = 0;
-	}
-	else
-		len1 = _strlen(s1);
+		s1 = "";
 	if (s2 == NULL)
-	{
-		len2 = 0;
-	}
-	else
-		len2 = _strlen(s2);
+		s2 = "";
+	len1 = _strlen(s1);
+	len2 = _strlen(s2);
 	if (len2 > n)
 	{
 		len2 = n;
