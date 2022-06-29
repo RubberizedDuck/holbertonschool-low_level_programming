@@ -61,18 +61,22 @@ char *_strdup(char *str)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
+	/* Creating new pointer of struct type */
 	dog_t *stored;
 
+	/* Allocating memory for pointer to be size of structure */
 	stored = malloc(sizeof(dog_t) + 1);
 
-
+	/* Checking if malloc is working */
 	if (stored == NULL)
 		return (NULL);
 
+	/* Storing duplicate pointers in "stored" pointer */
 	stored->name = _strdup(name);
 	stored->age = age;
 	stored->owner = _strdup(owner);
 
+	/* If either of the new duplicates equals NULL, frees malloc */
 	if (stored->name == NULL || stored->owner == NULL)
 	{
 		free(stored->name);
@@ -80,5 +84,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(stored);
 		return (NULL);
 	}
+	/* Returns the stored duplicate structure */
 	return (stored);
 }
