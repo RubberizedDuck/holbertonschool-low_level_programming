@@ -63,7 +63,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *stored;
 
-	stored = malloc(sizeof(dog_t));
+	stored = malloc(sizeof(dog_t) + 1);
 
 
 	if (stored == NULL)
