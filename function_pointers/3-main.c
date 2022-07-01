@@ -3,6 +3,13 @@
 #include <string.h>
 #include "3-calc.h"
 
+/**
+ * main - main function to print results
+ * @argc: The number of elements inputted to shell
+ * @argv: The value of the elements
+ * Return: 0 if successful
+ */
+
 int main(int argc, char *argv[])
 {
 	int num1, num2, res, (*calc)(int, int);
