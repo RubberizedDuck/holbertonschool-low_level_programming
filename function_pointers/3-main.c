@@ -9,8 +9,10 @@ int main(int argc, char *argv[])
 	char *s;
 
 	if (argc != 4)
-		exit(0);
-
+	{
+		printf("Error\n");
+		exit(98);
+	}
 	s = argv[2];
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
@@ -19,7 +21,7 @@ int main(int argc, char *argv[])
 	if (!calc)
 	{
 		printf("Error\n");
-		exit(0);
+		exit(99);
 	}
 	res = calc(num1, num2);
 	printf("%d\n", res);
