@@ -14,17 +14,17 @@ int sum_them_all(const unsigned int n, ...)
 	va_list ap;
 	unsigned int i, sum;
 
-	va_start (ap, n);
+	va_start(ap, n);
 
 	i = 0;
 	sum = 0;
 	while (i < n)
 	{
-		sum += va_arg (ap, unsigned int);
+		sum += va_arg(ap, unsigned int);
 		i++;
 	}
 	if (n == 0)
 		return (0);
-	va_end (ap);
+	va_end(ap);
 	return (sum);
 }
