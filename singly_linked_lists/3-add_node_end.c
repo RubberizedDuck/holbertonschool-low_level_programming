@@ -27,31 +27,31 @@ int _strlen(char *s)
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new;
-	list_t *prev;
+	list_t *newNode;
+	list_t *prevNode;
 
-	prev = *head;
-	new = malloc(sizeof(list_t));
+	prevNode = *head;
+	newNode = malloc(sizeof(list_t));
 	if (new == NULL)
 		return (NULL);
 
-	new->str = strdup(str);
-	if (new->str == NULL)
-		free(new);
+	newNode->str = strdup(str);
+	if (newNode->str == NULL)
+		free(newNode);
 
-	new->len = _strlen(new->str);
-	new->next = NULL;
+	newNode->len = _strlen(newNode->str);
+	newNode->next = NULL;
 
 	if (*head == NULL)
 	{
-		*head = new;
-		return (new);
+		*head = newNode;
+		return (newNode);
 	}
 	/* loops to the end of linked list */
-	while (prev->next != NULL)
-		prev = prev->next;
+	while (prevNode->next != NULL)
+		prevNode = prevNode->next;
 
 	/* when reaches end, assigs new address to new node */
-	prev->next = new;
-	return (new);
+	prevNode->next = newNode;
+	return (newNode);
 }
