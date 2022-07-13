@@ -2,7 +2,7 @@
 
 /**
  * pop_listint - delete's the head list node and returns the value
- * @head - pointer to the head pointer
+ * @head: - pointer to the head pointer
  * Return: Value stored in head list, or 0 if NULL
  */
 
