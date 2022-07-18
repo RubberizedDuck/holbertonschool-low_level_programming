@@ -11,7 +11,9 @@ int set_bit(unsigned long int *n, unsigned int index)
 	if (index > 32)
 		return (-1);
 
+	/* sets index to 1 then moves across left in binary */
 	index = 1 << index;
+	/* adds the index value to the n value */
 	*n = *n | index;
 
 	return (1);
