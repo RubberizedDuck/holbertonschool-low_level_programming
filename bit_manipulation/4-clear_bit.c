@@ -11,10 +11,8 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	if (index > 32)
 		return (-1);
 
-	index = 1 << index;
-	if (*n == 0)
-		return (0);
-	*n = (*n - index);
+	index = ~(1 << index);
+	*n = *n & index;
 
 	return (1);
 }
