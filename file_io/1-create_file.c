@@ -33,7 +33,7 @@ int create_file(const char *filename, char *text_content)
 	if (filename == NULL)
 		return (-1);
 /* creates a file with read and write permissions */
-	filDes = open(filename, O_CREAT | O_RDWR);
+	filDes = open(filename, O_CREAT | O_RDWR | O_TRUNC);
 	if (filDes == -1)
 		return (-1);
 /* writes into the file that was created */
