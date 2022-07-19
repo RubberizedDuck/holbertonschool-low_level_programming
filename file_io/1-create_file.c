@@ -11,7 +11,7 @@ int _strlen(char *s)
 	int len;
 
 	len = 0;
-	while (s[len] != '\0')
+	while (s != NULL && s[len] != '\0')
 	{
 		len = len + 1;
 	}
@@ -33,7 +33,7 @@ int create_file(const char *filename, char *text_content)
 	if (filename == NULL)
 		return (-1);
 /* creates a file with read and write permissions */
-	filDes = open(filename, O_CREAT | O_RDWR | O_TRUNC);
+	filDes = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	if (filDes == -1)
 		return (-1);
 /* writes into the file that was created */
