@@ -9,6 +9,10 @@ void free_dlistint(dlistint_t *head)
 {
 	dlistint_t *temp;
 
+	/**
+	 * frees up every node that gets stored in temp
+	 * until head equals NULL
+	 */
 	while (head != NULL)
 	{
 		temp = head;
