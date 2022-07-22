@@ -18,14 +18,13 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		return (NULL);
 	if (*h == NULL && idx > 0)
 		return (NULL);
-	/* Store copy of head */
+	new->n = n;
 	temp = *h;
 	if (idx == 0)
 	{
 		new = malloc(sizeof(*new));
 		if (new == NULL)
 			return (NULL);
-		new->n = n;
 		new->next = temp;
 		new->prev = NULL;
 		if (temp != NULL)
@@ -34,19 +33,18 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		return (new);
 
 	}
-	/* find where to add new node */
 	while (temp != NULL)
 	{
-		/* Adds new node once found */
 		if (nodeCount + 1 == idx)
 		{
 			new = malloc(sizeof(*new));
 			if (new == NULL)
 				return (NULL);
-			new->n = n;
 			new->next = temp->next;
 			new->prev = temp;
 			temp->next = new;
+			if (new->next != NULL)
+				new->next->prev = new;
 			return (new);
 		}
 		temp = temp->next;
