@@ -1,5 +1,6 @@
 CC=gcc
-CFLAGS=gcc -Wall -pedantic -Werror -Wextra -std=gnu89 -g
+CFLAGS=-Wall -pedantic -Werror -Wextra -std=gnu89 -g
+RM=rm -rf
 
 TARGET0=a
 SRC0=	0-main.c \
@@ -49,6 +50,11 @@ SRC6=	6-main.c \
 	6-hash_table_delete.c
 
 all: 0 1 2 3 4 5 6
+
+clean:
+	$(RM) *~ \
+	$(TARGET0) $(TARGET1) $(TARGET2) $(TARGET3) \
+	$(TARGET4) $(TARGET5) $(TARGET6)
 
 0:
 	$(CC) $(CFLAGS) $(SRC0) -o $(TARGET0)
