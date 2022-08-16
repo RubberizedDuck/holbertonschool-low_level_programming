@@ -30,7 +30,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			ht->array[index]->value = copied_value;
 			return (1);
 		}
-		i++;
 	}
 
 	new = malloc(sizeof(*new));
