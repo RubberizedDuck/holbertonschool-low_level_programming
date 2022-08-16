@@ -20,6 +20,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	if ((ht->array)[index] == NULL)
 		return (NULL);
 
+	find = (ht->array)[index];
 	while (value == NULL)
 	{
 		if (strcmp(find->key, key) == 0)
