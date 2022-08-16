@@ -1,6 +1,7 @@
 CC=gcc
 CFLAGS=-Wall -pedantic -Werror -Wextra -std=gnu89 -g
 RM=rm -rf
+BETTY=betty
 
 TARGET0=a
 SRC0=	0-main.c \
@@ -57,22 +58,29 @@ clean:
 	$(TARGET4) $(TARGET5) $(TARGET6)
 
 0:
+	$(BETTY) $(SRC0)
 	$(CC) $(CFLAGS) $(SRC0) -o $(TARGET0)
 
 1:
+	$(BETTY) $(SRC1)
 	$(CC) $(CFLAGS) $(SRC1) -o $(TARGET1)
 
 2:
+	$(BETTY) $(SRC2)
 	$(CC) $(CFLAGS) $(SRC2) -o $(TARGET2)
 
 3:
+	$(BETTY) $(SRC3)
 	$(CC) $(CFLAGS) $(SRC3) -o $(TARGET3)
 
 4:
+	$(BETTY) $(SRC4)
 	$(CC) $(CFLAGS) $(SRC4) -o $(TARGET4)
 
 5:
+	$(BETTY) $(SRC5)
 	$(CC) $(CFLAGS) $(SRC5) -o $(TARGET5)
 
 6:
+	$(BETTY) $(SRC6)
 	$(CC) $(CFLAGS) $(SRC6) -o $(TARGET6)
