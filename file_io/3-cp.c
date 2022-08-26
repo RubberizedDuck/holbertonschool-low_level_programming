@@ -13,7 +13,7 @@
 int copy_error(int from, int to, char *file_from, char *file_to)
 {
 	int reading, writing;
-	char buffer[2056];
+	char buffer[1024];
 
 	reading = read(from, buffer, 1024);
 	if (reading == -1)
