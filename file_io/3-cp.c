@@ -18,8 +18,7 @@ int copy_error(int from, int to, char *file_from, char *file_to)
 	reading = read(from, buffer, 1024);
 	if (reading == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n"
-			, file_from);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
 
